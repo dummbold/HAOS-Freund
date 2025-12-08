@@ -1,6 +1,6 @@
 # HAOS•Freund
 
-### Homeassistant Integration für Endgeräte mit .JSON
+### Eine universelle Homeassistant Integration für Endgeräte mit .JSON
 
 <img src="images/FREUND-LOGO-sg.svg" width="561" />
 
