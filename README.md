@@ -1,8 +1,8 @@
 # HAOS•Freund
 <svg
    version="1.0"
-   width="1683pt"
-   height="1190pt"
+   width="561pt"
+   height="397pt"
    viewBox="0 0 1683 1190"
    preserveAspectRatio="xMidYMid"
    id="svg5"
