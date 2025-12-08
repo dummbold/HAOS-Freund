@@ -11,7 +11,7 @@ from homeassistant.helpers.aiohttp_client import async_get_clientsession
 
 _LOGGER = logging.getLogger(__name__)
 
-DOMAIN = "json_freund"
+DOMAIN = "haos_freund"
 
 DATA_SCHEMA = vol.Schema({
     vol.Required("name"): str,
