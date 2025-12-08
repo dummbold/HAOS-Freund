@@ -56,7 +56,7 @@ async def validate_input(hass: HomeAssistant, data: dict):
     
     return {"title": data["name"]}
 
-class JsonFreundConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
+class JsonFreundConfigFlow(config_entries.ConfigFlow):
     """Handle a config flow for HAOS•Freund."""
 
     VERSION = 1
