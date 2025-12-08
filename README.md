@@ -18,7 +18,7 @@ Zur Installation kann man die .ZIP-Datei laden und alles manuell installieren od
 
     cd /config
     git clone https://github.com/dummbold/haos-freund.git
-    cp -r haos-freund/custom_components/json_freund custom_components/
+    cp -r haos-freund/custom_components/haos_freund custom_components/
 
 Man kann dann ein neues Gerät anlegen, die IP-Adresse zum JSON auswählen .... und den Rest macht die Integration. Sie liest das JSON aus, parst es und legt für jeden Wert im JSON eine Entität an. Das Gerät erscheint dann in der Intgration und kann verwaltet werden. Nicht benutzte Entitäten kann man einfach deaktivieren.
 
