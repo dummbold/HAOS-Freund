@@ -15,27 +15,6 @@
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
      id="defs5" />
-  <sodipodi:namedview
-     id="namedview5"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:document-units="pt"
-     inkscape:zoom="0.42067736"
-     inkscape:cx="861.70551"
-     inkscape:cy="1122"
-     inkscape:window-width="1632"
-     inkscape:window-height="1093"
-     inkscape:window-x="0"
-     inkscape:window-y="31"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg5"
-     showgrid="false" />
-  <g
      id="g1"
      transform="matrix(2.0322122,0,0,2.0322122,-120.69438,-707.00221)">
     <path
