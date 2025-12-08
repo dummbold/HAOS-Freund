@@ -2,7 +2,7 @@
 >
 >‼️ **Non german users:** please use your browsers translation function to translate this page into your prefered language. It is written in german – one of the languages with the most complex structures. Translation FROM german INTO another language is mostly some sort of linguistic "downscaling" and you should read theese textes in nearly native foreign language. 
 >
->Thanks for you cooperation and let me know in the "Issues" if and how this works for your language.
+>Thanks for your cooperation and let me know in the "Issues" if and how this works for your language.
 
 
 # HAOS•Freund
