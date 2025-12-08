@@ -56,11 +56,12 @@ async def validate_input(hass: HomeAssistant, data: dict):
     
     return {"title": data["name"]}
 
-class JsonFreundConfigFlow(config_entries.ConfigFlow):
+class HaosFreundConfigFlow(config_entries.ConfigFlow):
     """Handle a config flow for HAOS•Freund."""
 
     VERSION = 1
-
+    CONNECTION_CLASS = config_entries.CONN_CLASS_LOCAL_POLL
+    
     async def async_step_user(self, user_input=None):
         """Handle the initial step."""
         errors = {}
