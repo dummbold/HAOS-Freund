@@ -35,15 +35,33 @@ async def async_setup_entry(
     session = async_get_clientsession(hass)
     
     async def async_update_data():
-        """Fetch data from API."""
-        try:
-            async with async_timeout.timeout(10):
-                response = await session.get(url)
-                if response.status != 200:
-                    raise UpdateFailed(f"Error fetching data: {response.status}")
-                return await response.json()
-        except aiohttp.ClientError as err:
-            raise UpdateFailed(f"Error communicating with API: {err}")
+    """Fetch data from API."""
+    try:
+        async with async_timeout.timeout(10):
+            response = await session.get(url)
+            if response.status != 200:
+                raise UpdateFailed(f"Error fetching data: {response.status}")
+            
+            # Hole den kompletten Response als Text
+            text = await response.text()
+            
+            # Extrahiere JSON zwischen { und }
+            start = text.find('{')
+            end = text.rfind('}')
+            
+            if start == -1 or end == -1 or start >= end:
+                raise UpdateFailed("Invalid JSON in response")
+            
+            json_text = text[start:end+1]
+            
+            # Parse das extrahierte JSON
+            import json
+            return json.loads(json_text)
+            
+    except aiohttp.ClientError as err:
+        raise UpdateFailed(f"Error communicating with API: {err}")
+    except json.JSONDecodeError as err:
+        raise UpdateFailed(f"Invalid JSON: {err}")
     
     coordinator = DataUpdateCoordinator(
         hass,
