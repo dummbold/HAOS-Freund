@@ -1,5 +1,4 @@
 # HAOS•Freund
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    version="1.0"
    width="1683pt"
