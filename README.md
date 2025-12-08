@@ -35,7 +35,11 @@
   </g>
 </svg>
 ![FREUND-LOGO-sg](https://github.com/user-attachments/assets/3cb7224e-1673-4966-8a69-7fad6f938b04)
-HAOS•Freund is a HAOS integration that let's you integrate the •Freund sensors into HAOS. But not only those! You can use it for any IOT-Device that offers a JSON.
+
+    ‼️ Non german users: please use your browsers translation function to translate this page into your preffered language. It is written in german – one of the languages with the most complex structures. Translation FROM german INTO another language is mostly some sort of "downscaling" and you should read theese textes in nearly native foreing language. Thanks for you cooperation and let me know in the "Issues" if and how this works for your language.
+
+
+Der HAOS•Freund ist eine Integration für Homeassistant (HAOS).
 
 Zur Installation kann man die .ZIP-Datei laden und alles manuell installieren oder ganze einfach in HAOS ein Terminal installieren, starten und folgendes in der Shell eingeben:
 
