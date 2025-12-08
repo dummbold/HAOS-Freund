@@ -19,7 +19,7 @@ Zur Installation kann man die .ZIP-Datei laden und alles manuell installieren od
     git clone https://github.com/dummbold/haos-freund.git
     cp -r haos-freund/custom_components/haos_freund custom_components/
 
-Anschließend HAOS neu starten! Und mit ls -la nachschauen ob folgende Verzeichnisse angelegt wurden:
+**Anschließend HAOS neu starten**! Und nachschauen ob folgende Verzeichnisse angelegt wurden:
 
     /config/custom_components/haos_freund       -> Die Installation
     /config/haos-freund                         -> Die Originaldateien
