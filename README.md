@@ -1,9 +1,3 @@
-# HAOS•Freund
-
-### Eine universelle Homeassistant Integration für Endgeräte mit .JSON
-
-<img src="images/FREUND-LOGO-sg.svg" width="561" />
-
     🇺🇸🇬🇧🇫🇷🇪🇸🇮🇹🇪🇺🇺🇦🇦🇺🇫🇮🇨🇿🇧🇷🇨🇦🇰🇿🇨🇴🇲🇶🇳🇬🇸🇨🇪🇭🇺🇾🇺🇬🏳️🏴‍☠️
     ‼️ Non german users: please use your browsers translation function to translate this page 
     into your prefered language. It is written in german – one of the languages with the most 
@@ -11,6 +5,12 @@
     "downscaling" and you should read theese textes in nearly native foreing language. 
     Thanks for you cooperation and let me know in the "Issues" if and how this works for your language.
 
+
+# HAOS•Freund
+
+### Eine universelle Homeassistant Integration für Endgeräte mit .JSON
+
+<img src="images/FREUND-LOGO-sg.svg" width="561" />
 
 Der HAOS•Freund ist eine Integration für Homeassistant (HAOS).
 
