@@ -34,7 +34,6 @@
        style="fill:#000000;stroke:none;stroke-width:0.1" />
   </g>
 </svg>
-![FREUND-LOGO-sg](https://github.com/user-attachments/assets/3cb7224e-1673-4966-8a69-7fad6f938b04)
 
     🇺🇸🇬🇧🇫🇷🇪🇸🇮🇹🇪🇺🇺🇦🇦🇺🇫🇮🇨🇿🇧🇷🇨🇦🇰🇿🇨🇴🇲🇶🇳🇬🇸🇨🇪🇭🇺🇾🇺🇬🏳️🏴‍☠️
     ‼️ Non german users: please use your browsers translation function to translate this page 
