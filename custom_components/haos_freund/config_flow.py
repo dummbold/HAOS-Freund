@@ -1,4 +1,5 @@
 """Config flow for HAOS•Freund integration."""
+import json
 import logging
 import aiohttp
 import async_timeout
@@ -41,7 +42,6 @@ async def validate_input(hass: HomeAssistant, data: dict):
             json_text = text[start:end+1]
             
             # Parse das extrahierte JSON
-            import json
             json_data = json.loads(json_text)
             
             if not isinstance(json_data, dict):
