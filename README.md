@@ -36,7 +36,8 @@
 </svg>
 ![FREUND-LOGO-sg](https://github.com/user-attachments/assets/3cb7224e-1673-4966-8a69-7fad6f938b04)
 
-    _‼️ Non german users:_ please use your browsers translation function to translate this page 
+    🇺🇸🇬🇧🇫🇷🇪🇸🇮🇹🇪🇺🇺🇦🇦🇺🇫🇮🇨🇿🇧🇷🇨🇦🇰🇿🇨🇴🇲🇶🇳🇬🇸🇨🇪🇭🇺🇾🇺🇬🏳️🏴‍☠️
+    ‼️ Non german users: please use your browsers translation function to translate this page 
     into your prefered language. It is written in german – one of the languages with the most 
     complex structures. Translation FROM german INTO another language is mostly some sort of 
     "downscaling" and you should read theese textes in nearly native foreing language. 
