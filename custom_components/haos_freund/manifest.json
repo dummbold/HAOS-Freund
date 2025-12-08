@@ -1,0 +1,12 @@
+{
+  "domain": "haos_freund",
+  "name": "HAOS•Freund",
+  "codeowners": ["@dummbold"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/dummbold/haos-freund",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/dummbold/haos-freund/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}
