@@ -18,7 +18,6 @@ DATA_SCHEMA = vol.Schema({
     vol.Optional("scan_interval", default=60): vol.All(vol.Coerce(int), vol.Range(min=10)),
 })
 
-
 async def validate_input(hass: HomeAssistant, data: dict):
     """Validate the user input allows us to connect."""
     session = async_get_clientsession(hass)
@@ -28,16 +27,34 @@ async def validate_input(hass: HomeAssistant, data: dict):
             response = await session.get(data["url"])
             if response.status != 200:
                 raise ValueError("HTTP Error")
-            json_data = await response.json()
+            
+            # Hole den kompletten Response als Text
+            text = await response.text()
+            
+            # Extrahiere JSON zwischen { und }
+            start = text.find('{')
+            end = text.rfind('}')
+            
+            if start == -1 or end == -1 or start >= end:
+                raise ValueError("invalid_json")
+            
+            json_text = text[start:end+1]
+            
+            # Parse das extrahierte JSON
+            import json
+            json_data = json.loads(json_text)
+            
             if not isinstance(json_data, dict):
                 raise ValueError("Invalid JSON structure")
+                
     except aiohttp.ClientError:
         raise ValueError("cannot_connect")
+    except json.JSONDecodeError:
+        raise ValueError("invalid_json")
     except Exception:
         raise ValueError("invalid_json")
     
     return {"title": data["name"]}
-
 
 class JsonFreundConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
     """Handle a config flow for HAOS•Freund."""
