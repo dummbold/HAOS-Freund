@@ -1,7 +1,8 @@
 # HAOS•Freund
 
-![FREUND-LOGO-sg](https://github.com/user-attachments/assets/3cb7224e-1673-4966-8a69-7fad6f938b04)
-<img src="[images/meineGrafik.svg](https://github.com/user-attachments/assets/3cb7224e-1673-4966-8a69-7fad6f938b04)" width="561" />
+### Homeassistant Integration für Endgeräte mit .JSON
+
+<img src="images/FREUND-LOGO-sg.svg" width="561" />
 
     🇺🇸🇬🇧🇫🇷🇪🇸🇮🇹🇪🇺🇺🇦🇦🇺🇫🇮🇨🇿🇧🇷🇨🇦🇰🇿🇨🇴🇲🇶🇳🇬🇸🇨🇪🇭🇺🇾🇺🇬🏳️🏴‍☠️
     ‼️ Non german users: please use your browsers translation function to translate this page 
@@ -15,9 +16,9 @@ Der HAOS•Freund ist eine Integration für Homeassistant (HAOS).
 
 Zur Installation kann man die .ZIP-Datei laden und alles manuell installieren oder ganze einfach in HAOS ein Terminal installieren, starten und folgendes in die Shell eingeben:
 
-   cd /config
-   git clone https://github.com/deinname/json-freund.git
-   cp -r json-freund/custom_components/json_freund custom_components/
+    cd /config
+    git clone https://github.com/deinname/json-freund.git
+    cp -r json-freund/custom_components/json_freund custom_components/
 
 Man kann dann ein neues Gerät anlegen, die IP-Adresse zum JSON auswählen .... und den Rest macht die Integration. Sie liest das JSON aus, parst es und legt für jeden Wert im JSON eine Entität an. Das Gerät erscheint dann in der Intgration und kann verwaltet werden. Nicht benutzte Entitäten kann man einfach deaktivieren.
 
