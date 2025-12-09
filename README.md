@@ -11,7 +11,7 @@
 
 <img src="images/FREUND-LOGO-sg.svg" width="561" />
 
-Der HAOS•Freund ist eine Integration für Homeassistant (HAOS).
+Der HAOS•Freund ist eine Integration für Homeassistant (HAOS). Und sie löst ein eklatantes Problem: bisher musste man nämlich für JSON-Ausgaben die Sensoren von Hand in der configuration.yaml eintragen. Diese Zeiten sind nunmehr vorbei!
 
 Zur Installation muss man in HAOS ein Terminal installiert haben (AddOn: Terminal&SSH) und folgendes in die Shell eingeben:
 
@@ -35,7 +35,7 @@ Dann kann man in "+ Integration hinzufügen" nach "haos" suchen und findet den H
 
 In der aktuellen Version kann der HAOS•Freund auch JSON lesen das in HTML eingebettet ist und er entfernt dabei sämtliche Timestamps. Die benötigt HAOS nicht. Einschränkung: Die Timestamps müssen durch **_ts** markiert sein. Die Tatsache, dass JSON ein sehr offenes Format ist macht die Erkennung und das Parsen von JSON-Einträgen schwierig. Eine Idee für die Lösung des Problems reift bereits.
 
-Den Rest macht die Integration. Sie liest das JSON aus, parst es und legt in der Integration das Gerät und für jeden Wert im JSON eine Entität an. Das Gerät erscheint dann in der Intgration und kann verwaltet werden. Nicht benutzte Entitäten kann man einfach deaktivieren. Einheiten werden aktuell noch nicht berücksichtigt - das kommt aber noch. Auch die werden mal mitgeschickt, mal nicht ...
+Den Rest macht die Integration. Sie liest das JSON aus, parst es und legt in der Integration das Gerät und für jeden Wert im JSON eine Entität an. Das Gerät erscheint dann in der Integration und kann verwaltet werden. Nicht benutzte Entitäten kann man einfach deaktivieren. Einheiten werden aktuell noch nicht berücksichtigt - das kommt aber noch.
 
 <img width="1314" height="877" alt="integration" src="https://github.com/user-attachments/assets/0c544cdc-16f2-4716-a40a-32fa80ae82db" />
 
