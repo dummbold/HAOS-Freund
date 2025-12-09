@@ -78,7 +78,7 @@ async def async_setup_entry(
     
     await coordinator.async_config_entry_first_refresh()
     
-    # Flatten JSON and create sensors
+# Flatten JSON and create sensors
     sensors = []
     
     def flatten_json(data, parent_key=""):
@@ -96,6 +96,10 @@ async def async_setup_entry(
     flattened = flatten_json(coordinator.data)
     
     for sensor_key, _ in flattened:
+        # Überspringe alle Timestamp-Keys (enden mit "_ts")
+        if sensor_key.endswith("_ts"):
+            continue
+            
         sensors.append(
             HaosFreundSensor(
                 coordinator=coordinator,
@@ -104,7 +108,7 @@ async def async_setup_entry(
                 device_name=name,
             )
         )
-    
+        
     async_add_entities(sensors)
 
 
