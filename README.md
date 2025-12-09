@@ -22,8 +22,8 @@ Zur Installation muss man in HAOS ein Terminal installiert haben (AddOn: Termina
 **Anschließend HAOS neu starten (voller Neustart!)!**
 Am Besten nochmal nachschauen ob folgende Verzeichnisse angelegt wurden:
 
-    ls -la                        -> Die Originaldateien im Verzeichnis /config/haos-freund
-    ls -la custom_components      -> Die Installation im Verzeichnis /config/custom_components/haos_freund
+    ls -la                   -> Die Originaldateien im Verzeichnis /config/haos-freund
+    ls -la custom_components -> Die Installation im Verzeichnis /config/custom_components/haos_freund
 
 Dann kann man in "+ Integration hinzufügen" nach "haos" suchen und findet den HAOS•Freund.
 
