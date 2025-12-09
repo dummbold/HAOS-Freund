@@ -26,7 +26,7 @@ Zur Installation kann man die .ZIP-Datei laden und alles manuell installieren od
 
 Dann kann man in den Integrationen nach "haos" suchen und findet den HAOS•Freund.
 
-Beim Eintragen der Geräte IP nicht den Pfad zur JSON vergessen (z.B. 192.172.166.23**/json**)!!!
+Beim Eintragen der Geräte IP nicht den Pfad zur JSON vergessen (z.B. **192.172.166.23/json**)!!!
 
 In der aktuellen Version kann der HAOS•Freund auch JSON lesen das in HTML eingebettet ist und er entfernt sämtlich Timestamps. Die benötigt HAOS nicht. Einschränkung: Die Timestamps müssen durch _ts markiert sein. Die Tatsache, dass JSON ein sehr offenes Format ist macht die Erkennung von JSON-Einträgen schwierig. Eine Idee für die Lösung des Problems reift bereits.
 
