@@ -33,14 +33,11 @@ Dann kann man in "+ Integration hinzufügen" nach "haos" suchen und findet den H
 - Geräte IP: nicht den Pfad zur JSON vergessen (z.B. **192.172.166.23/json**)!!!
 - Update: Update der Daten in Sekunden
 
-**In der aktuellen Version kann der HAOS•Freund nur das sehr spezielle JSON des Wetterfreundes einlesen!**
-
-Die Tatsache, dass JSON ein sehr offenes Format ist macht die Erkennung und das Parsen von JSON-Einträgen einfach schwierig. Eine Idee für die Lösung des Problems reift bereits.
-
 Den Rest macht die Integration. Sie liest das JSON aus, parst es und legt in der Integration das Gerät und für jeden Wert im JSON eine Entität an. Das Gerät erscheint dann in der Integration und kann verwaltet werden. Nicht benutzte Entitäten kann man einfach deaktivieren. Einheiten werden aktuell noch nicht berücksichtigt - das kommt aber noch.
 
 <img width="1314" height="877" alt="integration" src="https://github.com/user-attachments/assets/0c544cdc-16f2-4716-a40a-32fa80ae82db" />
 
-Die Integration sollte eigentlich universell für alle Geräte einsetzbar sein für die es keine Integration gibt, die aber ein JSON zur Verfügung stellen. Postet gerne im Forumsbereich ob es geklappt hat und welche Geräte ihr damit eingebunden habt.
+‼️**In der aktuellen Version kann der HAOS•Freund nur das sehr spezielle JSON des Wetterfreundes einlesen!**
 
+Der HAOS•Freund soll eigentlich ein unverselles Tool werden um jedes Gerät einzubinden, für das es keine Integration gibt, dass aber ein JSON ausliefert (z.B. EcoTracker). Die Tatsache, dass JSON ein sehr offenes Format ist macht die Erkennung und das Parsen von JSON-Einträgen schwierig. Eine Idee für die Lösung des Problems reift bereits. 
 
