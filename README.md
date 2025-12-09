@@ -28,6 +28,8 @@ Dann kann man in den Integrationen nach "haos" suchen und findet den HAOS•Freu
 
 Beim Eintragen der Geräte IP nicht den Pfad zur JSON vergessen (z.B. 192.172.166.23**/json**)!!!
 
+In der aktuellen Version kann der HAOS•Freund auch JSON lesen das in HTML eingebettet ist und er entfernt sämtlich Timestamps. Die benötigt HAOS nicht. Einschränkung: Die Timestamps müssen durch _ts markiert sein. Die Tatsache, dass JSON ein sehr offenes Format ist macht die Erkennung von JSON-Einträgen schwierig. Eine Idee für die Lösung des Problems reift bereits.
+
 Man kann dann ein neues Gerät anlegen, die IP-Adresse zum JSON auswählen .... und den Rest macht die Integration. Sie liest das JSON aus, parst es und legt für jeden Wert im JSON eine Entität an. Das Gerät erscheint dann in der Intgration und kann verwaltet werden. Nicht benutzte Entitäten kann man einfach deaktivieren.
 
 Die Integration sollte eigentlich universell für alle Geräte einsetzbar sein für die es keine Integration gibt, die aber ein JSON zur Verfügung stellen. Postet gerne im Forumsbereich welche Geräte ihr damit eingebunden habt.
