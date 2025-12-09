@@ -32,17 +32,22 @@ async def validate_input(hass: HomeAssistant, data: dict):
             # Hole den kompletten Response als Text
             text = await response.text()
             
-            # Extrahiere JSON zwischen { und }
-            start = text.find('{')
-            end = text.rfind('}')
+            # Finde den Anfang des body-Inhalts (nach dem schließenden >)
+            body_start = text.find('<body>')
+            if body_start == -1:
+                raise ValueError("invalid_json")
+            body_start += 6  # Länge von '<body>'
             
-            if start == -1 or end == -1 or start >= end:
+            # Finde das Ende
+            body_end = text.find('</body>', body_start)
+            if body_end == -1:
                 raise ValueError("invalid_json")
             
-            json_text = text[start:end+1]
+            # Extrahiere nur den body-Inhalt
+            body_content = text[body_start:body_end].strip()
             
-            # Parse das extrahierte JSON
-            json_data = json.loads(json_text)
+            # Parse das als JSON
+            json_data = json.loads(body_content)
             
             if not isinstance(json_data, dict):
                 raise ValueError("Invalid JSON structure")
@@ -55,7 +60,7 @@ async def validate_input(hass: HomeAssistant, data: dict):
         raise ValueError("invalid_json")
     
     return {"title": data["name"]}
-
+    
 class HaosFreundConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
     """Handle a config flow for HAOS•Freund."""
 
