@@ -56,7 +56,7 @@ Der Parser erkennt den HTML-Teil und ignoriert ihn. Ebenso ignoriert er den Time
     "energyCounterIn": 6049540.1
     }
 
-Hier steigt der Parser noch aus, denn er erwartet HTML vorab - und das gibt es hier nicht. Die Tatsache, dass JSON ein sehr offenes Format ist macht die Erkennung und das Parsen von JSON-Einträgen einfach schwierig. Und noch schwierigiger ist es, wenn das JSON in HTML verpackt ist. Eine Idee für die Lösung des Problems reift bereits.
+Hier steigt der Parser noch aus, denn er erwartet HTML vorab - und das gibt es hier nicht. Die Tatsache, dass JSON ein sehr offenes Format ist macht die Erkennung und das Parsen von JSON-Einträgen einfach schwierig. Und noch schwieriger ist es, wenn das JSON in HTML verpackt ist. Eine Idee für die Lösung des Problems reift bereits.
 
 Den Rest macht die Integration. Sie liest das JSON aus, parst es und legt in der Integration das Gerät und für jeden Wert im JSON eine Entität an. Das Gerät erscheint dann in der Integration und kann verwaltet werden. Nicht benutzte Entitäten kann man einfach deaktivieren. Einheiten werden aktuell noch nicht berücksichtigt - das kommt aber noch.
 
