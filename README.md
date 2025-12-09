@@ -20,6 +20,7 @@ Zur Installation muss man in HAOS ein Terminal installiert haben (AddOn: Termina
     cp -r haos-freund/custom_components/haos_freund custom_components/
 
 **Anschließend HAOS neu starten (voller Neustart!)!**
+
 Am Besten nochmal nachschauen ob folgende Verzeichnisse angelegt wurden:
 
     ls -la                   -> Die Originaldateien im Verzeichnis /config/haos-freund
@@ -32,7 +33,7 @@ Dann kann man in "+ Integration hinzufügen" nach "haos" suchen und findet den H
 - Geräte IP: nicht den Pfad zur JSON vergessen (z.B. **192.172.166.23/json**)!!!
 - Update: Update der Daten in Sekunden
 
-In der aktuellen Version kann der HAOS•Freund auch JSON lesen das in HTML eingebettet ist und er entfernt dabei sämtliche Timestamps. Die benötigt HAOS nicht. Einschränkung: Die Timestamps müssen durch **_ts** markiert sein. Die Tatsache, dass JSON ein sehr offenes Format ist macht die Erkennung und das Parsen von JSON-Einträgen in schwierig. Eine Idee für die Lösung des Problems reift bereits.
+In der aktuellen Version kann der HAOS•Freund auch JSON lesen das in HTML eingebettet ist und er entfernt dabei sämtliche Timestamps. Die benötigt HAOS nicht. Einschränkung: Die Timestamps müssen durch **_ts** markiert sein. Die Tatsache, dass JSON ein sehr offenes Format ist macht die Erkennung und das Parsen von JSON-Einträgen schwierig. Eine Idee für die Lösung des Problems reift bereits.
 
 Den Rest macht die Integration. Sie liest das JSON aus, parst es und legt in der Integration das Gerät und für jeden Wert im JSON eine Entität an. Das Gerät erscheint dann in der Intgration und kann verwaltet werden. Nicht benutzte Entitäten kann man einfach deaktivieren. Einheiten werden aktuell noch nicht berücksichtigt - das kommt aber noch. Auch die werden mal mitgeschickt, mal nicht ...
 
