@@ -46,23 +46,28 @@ async def async_setup_entry(
                 # Hole den kompletten Response als Text
                 text = await response.text()
                 
-                # Extrahiere JSON zwischen { und }
-                start = text.find('{')
-                end = text.rfind('}')
+                # Finde den Anfang des body-Inhalts (nach dem schließenden >)
+                body_start = text.find('<body>')
+                if body_start == -1:
+                    raise UpdateFailed("No <body> tag found in response")
+                body_start += 6  # Länge von '<body>'
                 
-                if start == -1 or end == -1 or start >= end:
-                    raise UpdateFailed("Invalid JSON in response")
+                # Finde das Ende
+                body_end = text.find('</body>', body_start)
+                if body_end == -1:
+                    raise UpdateFailed("No </body> tag found in response")
                 
-                json_text = text[start:end+1]
+                # Extrahiere nur den body-Inhalt
+                body_content = text[body_start:body_end].strip()
                 
-                # Parse das extrahierte JSON
-                return json.loads(json_text)
+                # Parse das als JSON
+                return json.loads(body_content)
                 
         except aiohttp.ClientError as err:
             raise UpdateFailed(f"Error communicating with API: {err}")
         except json.JSONDecodeError as err:
-            raise UpdateFailed(f"Invalid JSON: {err}")
-    
+            raise UpdateFailed(f"Invalid JSON: {err}")    
+            
     coordinator = DataUpdateCoordinator(
         hass,
         _LOGGER,
