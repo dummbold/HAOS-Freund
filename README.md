@@ -1,3 +1,7 @@
+<p align="right"><img width="220" height="52" alt="dgpt" src="https://github.com/user-attachments/assets/e763407f-dff7-4a2b-9bbd-d04cf14373ff" /></p>
+
+
+
 >🇺🇸🇬🇧🇫🇷🇪🇸🇮🇹🇪🇺🇺🇦🇦🇺🇫🇮🇨🇿🇧🇷🇨🇦🇰🇿🇨🇴🇲🇶🇳🇬🇸🇨🇪🇭🇺🇾🇺🇬🏳️🏴‍☠️
 >
 >‼️ **Non german users:** please use your browsers translation function to translate this page into your prefered language. It is written in german – one of the languages with the most complex structures. Translation FROM german INTO another language is mostly some sort of linguistic "downscaling" and you should read theese textes in nearly native foreign language. 
