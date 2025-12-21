@@ -8,12 +8,13 @@
 >
 >Thanks for your cooperation and let me know in the "Issues" if and how this works for your language.
 
+----
+***STATUS: Proof of Concept***
+----
 
 # HAOS•Freund
 
 ### Eine universelle Homeassistant Integration für Endgeräte mit .JSON
-
-<img src="images/FREUND-LOGO-sg.svg" width="561" />
 
 Der HAOS•Freund ist eine Integration für Homeassistant (HAOS). Und sie löst ein eklatantes Problem: bisher musste man nämlich für JSON-Ausgaben die Sensoren von Hand in der configuration.yaml eintragen. Diese Zeiten sind nunmehr vorbei!
 
